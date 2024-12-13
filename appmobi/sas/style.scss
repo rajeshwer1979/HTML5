@@ -1,0 +1,68 @@
+@import "compass";
+
+
+$color:#fff;
+$bgcolor:#333;
+
+
+@font-face{
+src:url(../fonts/iphone.ttf);
+font-family:test;
+}
+
+
+@mixin anim($a:all,$b:1s,$c:ease-in){
+transition:$a $b $c;
+-webkit-transition:$a $b $c;
+-moz-transition:$a $b $c;
+-o-transition:$a $b $c;
+-ms-transition:$a $b $c;
+}
+
+#header{
+position:fixed;
+left:0;
+width:100%;
+top:0;
+height:50px;
+background: #f85032; /* Old browsers */
+background: -moz-linear-gradient(top,  #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f85032), color-stop(50%,#f16f5c), color-stop(51%,#f6290c), color-stop(71%,#f02f17), color-stop(100%,#e73827)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+
+.logo{
+position:absolute;
+left:10px;
+top:5px;
+width:100px;
+height:40px;
+background-color:$bgcolor;
+@include anim();
+}
+
+.settings{
+
+position:absolute;
+right:10px;
+@include anim(all,3s,ease-in-out);
+
+.icon{
+width:24px;
+height:24px;
+background-color:$bgcolor;
+}
+p{
+color:$color;
+font-family:test;
+font-size:12px;
+text-shadow:1px 1px 1px rgba(0,0,0,0.2);
+}
+
+}
+
+}
+
