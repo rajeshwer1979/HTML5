@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+#banner { position:relative; width:900px; height:250px; border-radius:10px; border:2px solid #fff; box-shadow:1px 1px 10px rgba(0, 0, 0, 0.15); margin:auto; margin-top:20px; overflow:hidden; }
+.one { position:absolute; width:900px; height:250px; }
+.two { position:absolute; width:900px; height:250px; }
+.z1 { position:absolute; width:180px; left:0; height:100%; background-image:url(22.jpg); -webkit-animation-name:anim1; -webkit-animation-delay:1s; -webkit-animation-duration:0.5s; -webkit-animation-fill-mode:forwards; }
+.z2 { position:absolute; width:180px; left:20%; height:100%; background-image:url(22.jpg); background-position:-180px 0px; -webkit-animation-name:anim1; -webkit-animation-delay:1.2s; -webkit-animation-duration:0.5s; -webkit-animation-fill-mode:forwards; }
+.z3 { position:absolute; width:180px; left:40%; background-image:url(22.jpg); height:100%; background-position:-360px 0px; -webkit-animation-name:anim1; -webkit-animation-delay:1.4s; -webkit-animation-duration:0.5s; -webkit-animation-fill-mode:forwards; }
+.z4 { position:absolute; width:180px; background-image:url(22.jpg); background-position:-540px 0px; left:60%; height:100%; -webkit-animation-name:anim1; -webkit-animation-delay:1.6s; -webkit-animation-duration:0.5s; -webkit-animation-fill-mode:forwards; }
+.z5 { position:absolute; width:180px; height:100%; background-image:url(22.jpg); background-position:-720px 0px; -webkit-animation-name:anim1; -webkit-animation-delay:1.8s; -webkit-animation-duration:0.5s; -webkit-animation-fill-mode:forwards; left:80%; }
+ @-webkit-keyframes anim1 {  0% {
+ top:0px;
+}
+ 100% {
+ top:-250px;
+}
+}
+</style>
+</head>
+<body>
+<div id="banner">
+	<div class="one"><img src="11.jpg"/></div>
+	<div class="two">
+		<div class="z1"></div>
+		<div class="z2"></div>
+		<div class="z3"></div>
+		<div class="z4"></div>
+		<div class="z5"></div>
+	</div>
+</div>
+</body>
+</html>

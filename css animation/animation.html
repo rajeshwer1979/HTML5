@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+#red{
+	position:absolute;
+	width:100px;
+	height:100px;
+	left:300px;
+	top:200px;
+	background-color:#f00;
+	-webkit-transform-origin:center -100px;
+	-webkit-animation-name:anim1;
+	-webkit-animation-delay:0s;
+	-webkit-animation-duration:2s;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-fill-mode:forwards;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+
+
+}
+
+
+@-webkit-keyframes anim1{
+	0%{
+	-webkit-transform:rotate(100deg);	
+		
+	}
+	100%{
+		
+		-webkit-transform:rotate(-100deg);		
+		
+	}
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="red">
+
+</div>
+</body>
+</html>
