@@ -1,0 +1,21 @@
+@import "compass";
+
+
+$color:#444;
+
+@mixin test($a:1px,$b:1px,$c:5px,$d:#333){
+-webkit-box-shadow:$a $b $c $d;
+-o-box-shadow:$a $b $c $d;
+-moz-box-shadow:$a $b $c $d;
+-ms-box-shadow:$a $b $c $d;
+}
+
+header{
+div{
+@include test();
+h1{
+color:$color;
+@include test(5px,5px,10px,#222);
+}
+}
+}

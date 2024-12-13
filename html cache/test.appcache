@@ -1,0 +1,17 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+styles/style.css
+assets/logo.png
+assets/logo1.png
+assets/settings.png
+assets/settings1.png
+fonts/OpenSans-Regular.ttf
+
+NETWORK:
+*
+
+
+FALLBACK:
+images/*.jpg  assets/default.png
